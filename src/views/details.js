@@ -60,7 +60,10 @@ export async function detailsPage(ctx) {
     console.log(finalComments);
     const isOwner = userData && userData.id == game.owner.objectId;
     const seeAddComment = userData && !isOwner;
-    const userEmail = userData.email;
+    let userEmail = 'unknown';
+    if(userData){
+        userEmail = userData.email;
+    }
 
     ctx.render(detailsTemplate(game, isOwner, onDelete, finalComments, seeAddComment, onSubmit, userEmail));
 
