@@ -1,2 +1,1 @@
-Simple single page application with vanilla javascript. The libraries used are lit-html and page. Back4app is used for the backend. 
-The web app stores games. You can register. Logged users can add and edit new games and comments.
+Simple single page application made with JS for storing information about different games. The libraries used are lit-html and page. Back4app is used for the backend. You can register. Logged users can add and edit new games and comments.
